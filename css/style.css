@@ -985,6 +985,10 @@ svg {
   position: relative;
 }
 
+.about-us .fp-overflow {
+  overflow-x: hidden;
+}
+
 .about-us__title {
   padding-top: 3.75rem;
 }
