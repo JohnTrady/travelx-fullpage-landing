@@ -3922,10 +3922,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     gap: 0.9375rem;
   }
 
-  .activities .fp-overflow {
-    overflow: hidden;
-  }
-
   .activities__title {
     position: absolute;
     top: -3.75rem;
