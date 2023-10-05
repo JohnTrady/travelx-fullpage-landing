@@ -3470,6 +3470,18 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   }
 }
 
+@media (min-width: 47.99875em) and (any-hover: hover) {
+  .slider-activities__image:hover img {
+    -webkit-transition: -webkit-transform 0.7s ease 0s;
+    transition: -webkit-transform 0.7s ease 0s;
+    transition: transform 0.7s ease 0s;
+    transition: transform 0.7s ease 0s, -webkit-transform 0.7s ease 0s;
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 @media (min-width: 61.99875em) {
   .select_options-item .select__options {
     top: 0.1875rem;
@@ -3910,6 +3922,10 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
     gap: 0.9375rem;
   }
 
+  .activities .fp-overflow {
+    overflow: hidden;
+  }
+
   .activities__title {
     position: absolute;
     top: -3.75rem;
@@ -3946,7 +3962,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   }
 
   .slider-activities__content {
-    bottom: 3.125rem;
+    bottom: 6.25rem;
     left: 2.5rem;
   }
 
@@ -4072,16 +4088,6 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
         -ms-transform: scale(1.1);
             transform: scale(1.1);
     color: #fff;
-  }
-
-  .slider-activities__image:hover img {
-    -webkit-transition: -webkit-transform 0.7s ease 0s;
-    transition: -webkit-transform 0.7s ease 0s;
-    transition: transform 0.7s ease 0s;
-    transition: transform 0.7s ease 0s, -webkit-transform 0.7s ease 0s;
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
   }
 
   .activities-controls__button {
