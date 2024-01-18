@@ -1,0 +1,175 @@
+.my-contacts {
+  position: fixed;
+  bottom: 30px;
+  left: 15px;
+  padding: 30px 25px 15px 15px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 15px;
+  color: #222;
+  font-weight: 500;
+  font-size: 18px;
+  box-shadow: 0px 0px  15px rgb(0, 0, 0, 0.7);
+  -webkit-appearance: none;
+  -moz-box-shadow:  0px 0px  24px rgb(0, 0, 0, 0.7);
+  -webkit-box-shadow: 0px 0px  24px rgb(0, 0, 0, 0.7);
+  transform: translate(calc((-100%) - 15px), 0);
+  transition: transform 0.3s ease 0s;
+
+}
+
+@media (max-width:  29.99875em) {
+
+  .my-contacts {
+    transform: translate(calc((-100%) - 5px), 0);
+    bottom: 15px;
+    left:0;
+    padding: 30px 0px 15px 15px;
+    font-size: 16px;
+    width: calc(100% - 10px);
+    
+  }
+  .my-contacts__email {
+    font-size: 14px;
+  }
+
+  .my-contacts__item::before {
+    content: "";
+  width: 24px;
+  height: 24px;
+  flex: 0 0 px;
+
+  margin-right: 15px;
+}
+
+ 
+ 
+   
+}
+
+
+.my-contacts._show-block  {
+    transform: translate(0,0);
+    
+}
+
+.my-contacts._show-block  .my-contacts__button-show   {
+  opacity: 0;
+
+}
+
+
+
+
+
+.my-contacts>*:hover {
+  text-decoration: underline;
+}
+
+.my-contacts__button {
+   width: 16px;
+   height: 16px;
+  display: block;
+  position: absolute;
+  right:10px;
+  top:10px;
+  cursor: pointer;
+  z-index: 5;
+  padding: 5px;
+  box-sizing: content-box;
+
+   
+}
+
+.my-contacts__button span,
+.my-contacts__button::before {
+    display: block;
+    content: "";
+    transition: all 0.3s ease 0s;
+    width: 100%;
+    height: 2px;
+    background-color: #222;
+}
+
+.my-contacts__button span {
+    transform: rotate(-45deg) translate(4%,-1px)  ;
+}
+
+.my-contacts__button::before  {
+    transform: rotate(45deg) translate(4%,1px) ;
+}
+
+
+.my-contacts__email {
+   font-size: 16px;
+}
+
+
+.my-contacts__telegram {
+
+}
+
+
+
+.my-contacts__button-show {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    width: 20px;
+    height: 50px;
+    border-radius: 0px 10px 10px 0px;
+    transform: translate(0, -50%);
+    display: flex;
+    align-items: center;
+    opacity: 1;
+
+   
+
+}
+
+.my-contacts__button-show span {
+ 
+   border: 5px solid transparent; border-left: 7px solid #000;
+   transform: translate(5px, 0);
+
+}
+
+.my-contacts__item {
+  
+  display: flex;
+  align-items: center;
+
+}
+
+.my-contacts__item::before {
+    content: "";
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+
+  margin-right: 15px;
+}
+
+.my-contacts__whatsapp::before {
+    background: url("../img/icons/whatsapp-icon.svg") center/ 100% no-repeat;
+
+}
+
+
+   
+
+
+
+.my-contacts__telegram::before  {
+  
+    background: url("../img/icons/telegram-icon.svg") center/ 100% no-repeat;
+
+  
+}
+
+.my-contacts__email::before  {
+    background: url("../img/icons/mail.svg") center / 100% no-repeat;
+}
+
